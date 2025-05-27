@@ -138,7 +138,8 @@ main {
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.element {
+	.card-link:link,
+	.card-link:visited {
 		transition: none;
 	}
 }
