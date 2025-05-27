@@ -106,7 +106,6 @@ main {
 .card-link:visited {
 	color: var(--text-strong);
 	text-decoration: none;
-	transition: all 0.3s ease-in-out;
 }
 
 .card-link:hover,
@@ -137,9 +136,9 @@ main {
 	border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: no-preference) {
 	.card-link:link,
 	.card-link:visited {
-		transition: none;
+		transition: all 0.3s ease-in-out;
 	}
 }
