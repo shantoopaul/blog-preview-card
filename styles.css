@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary-color: hsl(47, 88%, 63%);
+	--text-strong: hsl(0, 0%, 7%);
+	--text-weak: hsl(0, 0%, 42%);
+	--fill: hsl(0, 0%, 100%);
+
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 12px;
+	--space-4: 24px;
+
+	--border-radius-sm: 4px;
+	--border-radius-md: 10px;
+	--border-radius-lg: 20px;
+
+	--text-heading: clamp(1.25rem, 1.67vw + 0.858rem, 1.5rem);
+	--text-content: clamp(0.875rem, 1.67vw + 0.483rem, 1rem);
+	--text-small: clamp(0.75rem, 1.67vw + 0.358rem, 0.875rem);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Figtree', sans-serif;
+	background-color: var(--primary-color);
+	color: var(--text-strong);
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.author-details,
+.title,
+.badge {
+	font-weight: 800;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+
+	width: 100%;
+	max-width: 384px;
+	padding: var(--space-4);
+	margin-inline: var(--space-4);
+
+	background-color: var(--fill);
+	border: 1px solid var(--text-strong);
+	border-radius: var(--border-radius-lg);
+	box-shadow: var(--space-2) var(--space-2) 0px var(--text-strong);
+}
+
+.card-image {
+	height: 200px;
+}
+
+.card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: var(--border-radius-md);
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--space-3);
+}
+
+.badge {
+	width: fit-content;
+	padding: var(--space-1) var(--space-3);
+	background-color: var(--primary-color);
+	border-radius: var(--border-radius-sm);
+}
+
+.badge,
+.date {
+	font-size: var(--text-small);
+}
+
+.card-link:link,
+.card-link:visited {
+	color: var(--text-strong);
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.card-link:hover,
+.card-link:active {
+	color: var(--primary-color);
+}
+
+.title {
+	font-size: var(--text-heading);
+}
+
+.description {
+	font-size: var(--text-content);
+	color: var(--text-weak);
+}
+
+.author-details {
+	display: flex;
+	align-items: center;
+	column-gap: var(--space-3);
+	font-size: 0.875rem;
+}
+
+.author-details img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
