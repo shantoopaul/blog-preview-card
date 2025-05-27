@@ -136,3 +136,9 @@ main {
 	height: 32px;
 	border-radius: 50%;
 }
+
+@media (prefers-reduced-motion: reduce) {
+	.element {
+		transition: none;
+	}
+}
