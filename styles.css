@@ -139,6 +139,6 @@ main {
 @media (prefers-reduced-motion: no-preference) {
 	.card-link:link,
 	.card-link:visited {
-		transition: all 0.3s ease-in-out;
+		transition: color 0.3s ease-in-out;
 	}
 }
