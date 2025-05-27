@@ -106,6 +106,7 @@ main {
 .card-link:visited {
 	color: var(--text-strong);
 	text-decoration: none;
+	transition: none;
 }
 
 .card-link:hover,
